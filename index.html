@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Letter</title>
+
+<style>
+
+body{
+
+font-family:Arial;
+
+background:#fff6f8;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+}
+
+.card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+text-align:center;
+
+width:350px;
+
+}
+
+input{
+
+width:100%;
+
+padding:12px;
+
+margin-top:20px;
+
+font-size:16px;
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#ff6b9d;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+#error{
+
+color:red;
+
+margin-top:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>💌</h2>
+
+<h3>Rất chào cục cưng yêu dấu của em </h3>
+<h3>Mục tiêu tháng sau là anh phải ăn ngon, ngủ ngoan và không phải đi massage cổ vai gáy nữa nha </h3>
+
+<p>*nếu better nữa thì phải lên ký và biết vào chỗ mát mà ngồi nữa*</p>
+  
+<p>OK NHÓ?*</p>
+  
+<input id="password">
+
+<button onclick="check()">Unlock</button>
+
+<p id="error"></p>
+
+</div>
+
+<script>
+
+const LETTER = "https://aromatic-noodle-96c.notion.site/September-2026-3e0106c4ee0b80b6ad19f1bbbd5fa5e0";
+
+function check() {
+
+    const input = document.getElementById("password").value.trim();
+
+    if(input.length === 0){
+        document.getElementById("error").innerHTML = "PHẢI OK, BUỘC PHẢI OK -_-";
+        return;
+    }
+
+    document.getElementById("error").innerHTML = "Giỏiii , ông xã giỏiii, ráng lênn🙏";
+
+    setTimeout(() => {
+        window.location.href = LETTER;
+    }, 700);
+
+}
+</script>
+
+</body>
+
+</html>
